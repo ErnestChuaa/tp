@@ -1,0 +1,29 @@
+## Exact 1280×720 / 150% acceptance — 12 October 2026
+
+**The previously unavailable exact Windows row is now verified and PASS.** Custom scaling at 150%, followed by an actual Windows sign-out/sign-in, retains the exact 1280×720 mode. This supersedes the NOT RUN assessment in the earlier [Round 3 report](https://github.com/AY2627S1-CS2103T-F13-3/tp/issues/128#issuecomment-6124069575). No JavaFX scale override or logical-only preview was used.
+
+Same merged-master source `444de5283ef26bf98c3d3c4fd8af0616ffeb4fb8`, same 12,646,767-byte JAR, SHA-256 `ef7439586efced26861a6e9cdd170a92eb076c2da792ff8bda54944014cc1dce`. Windows 11 Pro 25H2, build 26200.9457, x64; Oracle Java 25.0.4+7-LTS-189 / JavaFX 17.0.7. Codex-operated native input and screenshots on Ernest's Windows desktop; user performed the sign-in. This is not a claim of a human-operated action checklist.
+
+**Independent measurements**
+- Win32 current DEVMODE: **1280×720, 360 Hz, 32-bit**. Win32 desktop raster also measures 1280×720. The WMI video-controller reading remained stale at 2560×1440; it is not used to establish the exact mode.
+- Settings captures show resolution 1280×720 and a custom-scale configuration of **150**, without the earlier pending-sign-out warning. The disabled standard 100% selector is inactive while custom scaling is enabled.
+- A fresh JavaFX process reports bounds **853×480**, output scale **1.5×1.5**, and visual bounds **853×432** with the taskbar visible. The production window reports **144 DPI**.
+- Physical usable desktop: **1280×648**, with the **72-pixel taskbar** visible below.
+
+| Fixed checklist at exact 720p/150% | Result / observed evidence |
+| --- | --- |
+| Launch / window fit | PASS — compact 450×360 logical window is 675×540 physical at (75,75); menu, command, result, list and footer are accessible |
+| Role/card display | PASS — 19 all-role people; 6 students, 6 tutors, 7 parents; student S12 at filtered position 2; required fields, missing-contact placeholders and leading-zero phone values readable |
+| Long content | PASS — native wheel reaches NameEnd, the complete unbroken email ending, AddressEnd Singapore 123456, final parent P44 and its final address; no horizontal scrolling required |
+| Help/F1 | PASS — native F1 from command and result focus plus an explicit Help-menu click preserve the unfinished command and selected S12 |
+| Resize | PASS — native drag 450×360 → 600×380 → 450×360 logical; the wide height fits this work area; final help example and final-person address reached again after the last resize |
+| Saved-window recovery | PASS — 5000×5000 preferences recover to 853.3333×432 logical / 1280×648 physical at (0,0), above the visible taskbar; offscreen 740×600 at (99999,99999) recovers to 740×432 logical, saved coordinates (56,0), physical bounds 1110×648 at (85,0) |
+| Exit/restart | PASS — explicit File → Exit ends the Java process orderly; restart retains 450×360 at (50,50) logical and reloads all 19 records |
+
+Original and final read-only fixture SHA-256 match: `f9e57f588aaa738503792ab9ed88317c729a032ee618c983005fea87cb1574f3`. No code/guide/test-source change or new product failure was found. The earlier 37 focused regressions and fresh 1080p/100% and 125% native passes remain tied to the same artifact; they were not unnecessarily rerun.
+
+**Restoration complete:** the temporary custom-scaling registry values were restored to their original presence/types/values; standard per-monitor scaling is active again. Settings show **2560×1440 / 125%**, a fresh JavaFX process reports **1.25×**, and taskbar auto-hide is ON. No second sign-out was needed. Test Java processes are closed.
+
+The local evidence ZIP is updated with the matching JAR/fixture, exact Settings/app/taskbar screenshots, native input transcript, Win32 and JavaFX measurements, saved bounds, application logs and original regression XML. Screenshots supporting the checklist were inspected. No video recording is claimed; the transcript records the Codex-operated action sequences. The ZIP is delivered in this Codex task and is not attached to GitHub.
+
+**Round 3 Windows verification work is complete.** The remaining acceptance step is teammate assessment of the available evidence and residual platform limits. One connected display meant secondary-monitor interaction was NOT RUN here; retain Vincent's earlier negative-coordinate results under their own artifact. Native Linux and the unperformed exact Mac physical combinations are not newly verified. Keep #128/#77 open for that assessment; #134 remains merged and #84/#184 remain cleared.
