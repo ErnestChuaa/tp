@@ -1,43 +1,86 @@
-name: Java CI
+name: Windows history bounds comparison
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ernest/verify-history-bounds-319]
+
+permissions:
+  contents: read
 
 jobs:
-  build:
-    strategy:
-      matrix:
-        platform: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.platform }}
-
+  compare:
+    runs-on: windows-latest
+    timeout-minutes: 15
     steps:
-      - name: Set up repository
-        uses: actions/checkout@v7
-
-      - name: Run repository-wide tests
-        if: runner.os == 'Linux'
-        working-directory:  ${{ github.workspace }}/.github
-        run: ./run-checks.sh
-
-      - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v6
-
-      - name: Setup JDK 25
+      - name: Set up the reported Oracle JDK
         uses: actions/setup-java@v5
         with:
-          distribution: 'zulu'
-          java-version: '25'
-          java-package: jdk+fx
+          distribution: oracle
+          java-version: '25.0.4.1'
+          java-package: jdk
 
-      - name: Build and check with Gradle on a virtual display
-        if: runner.os == 'Linux'
-        run: xvfb-run --auto-servernum ./gradlew check coverage
-
-      - name: Build and check with Gradle
-        if: runner.os != 'Linux'
-        run: ./gradlew check coverage
-
-      - name: Upload coverage reports to Codecov
-        if: runner.os == 'Linux'
-        uses: codecov/codecov-action@v7
+      - name: Check out the exact reported baseline
+        uses: actions/checkout@v7
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          repository: AY2627S1-CS2103T-F13-3/tp
+          ref: 93f0162f40b6d8e56a9e6c5df9534bfde9f283bd
+          path: baseline
+
+      - name: Check out the tested correction
+        uses: actions/checkout@v7
+        with:
+          repository: ErnestChuaa/tp
+          ref: 97cdf7d340a8b30de28187c97d65edf2f51e6f3a
+          path: corrected
+
+      - name: Record Windows and Java environment
+        shell: pwsh
+        run: |
+          Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,BuildNumber,OSArchitecture
+          java -version
+          Write-Output "JAVA_HOME=$env:JAVA_HOME"
+          Get-Content -LiteralPath "$env:JAVA_HOME/release"
+          git -C baseline rev-parse HEAD
+          git -C corrected rev-parse HEAD
+
+      - name: Run the unmodified baseline test
+        id: baseline
+        continue-on-error: true
+        working-directory: baseline
+        shell: pwsh
+        run: |
+          .\gradlew.bat test --tests "seedu.address.ui.HistoryListPanelTest.layout_wrapsCompleteRowsWithinCompactAndNormalViewports" --no-daemon --console=plain
+          exit $LASTEXITCODE
+
+      - name: Run the corrected test
+        id: corrected
+        working-directory: corrected
+        shell: pwsh
+        run: |
+          .\gradlew.bat test --tests "seedu.address.ui.HistoryListPanelTest.layout_wrapsCompleteRowsWithinCompactAndNormalViewports" --no-daemon --console=plain
+          exit $LASTEXITCODE
+
+      - name: Summarize both observed results
+        if: always()
+        shell: pwsh
+        run: |
+          foreach ($candidate in @('baseline', 'corrected')) {
+            $reportPath = "$candidate/build/test-results/test/TEST-seedu.address.ui.HistoryListPanelTest.xml"
+            if (Test-Path -LiteralPath $reportPath) {
+              $suite = ([xml](Get-Content -LiteralPath $reportPath -Raw)).testsuite
+              $summary = "$candidate : tests=$($suite.tests), failures=$($suite.failures), errors=$($suite.errors), skipped=$($suite.skipped), host=$($suite.hostname)"
+              Write-Output $summary
+              Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY -Value $summary
+              Get-Content -LiteralPath $reportPath
+            }
+          }
+
+      - name: Retain the exact test reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: windows-oracle-history-bounds
+          path: |
+            baseline/build/test-results/test/
+            corrected/build/test-results/test/
+          retention-days: 14
