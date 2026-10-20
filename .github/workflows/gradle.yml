@@ -13,11 +13,20 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Set up the reported Oracle JDK
-        uses: actions/setup-java@v5
-        with:
-          distribution: oracle
-          java-version: '25.0.4.1'
-          java-package: jdk
+        shell: pwsh
+        run: |
+          $archiveUrl = 'https://download.oracle.com/java/25/archive/jdk-25.0.4.1_windows-x64_bin.zip'
+          $archivePath = Join-Path $env:RUNNER_TEMP 'oracle-jdk.zip'
+          $installPath = Join-Path $env:RUNNER_TEMP 'oracle-jdk'
+          Invoke-WebRequest -Uri $archiveUrl -OutFile $archivePath
+          $expectedHash = (Invoke-WebRequest -Uri "$archiveUrl.sha256").Content.Trim().Split(' ')[0]
+          if ((Get-FileHash -LiteralPath $archivePath -Algorithm SHA256).Hash -ne $expectedHash) {
+            throw 'Oracle JDK archive checksum mismatch'
+          }
+          Expand-Archive -LiteralPath $archivePath -DestinationPath $installPath
+          $jdkPath = (Get-ChildItem -LiteralPath $installPath -Directory | Select-Object -First 1).FullName
+          Add-Content -LiteralPath $env:GITHUB_ENV -Value "JAVA_HOME=$jdkPath"
+          Add-Content -LiteralPath $env:GITHUB_PATH -Value "$jdkPath\bin"
 
       - name: Check out the exact reported baseline
         uses: actions/checkout@v7
