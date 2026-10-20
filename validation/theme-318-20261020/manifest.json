@@ -5,7 +5,7 @@
   "wordmark_pr_339": "6cda3bdeb20e08ce000ab557de470b743e60c053",
   "runtime": "Windows 11 x64; Azul Java/JavaFX 25.0.4.1+1-LTS",
   "physical_display": "2560x1440",
-  "actual_os_scale": "125%",
+  "actual_os_scale": "100%, 125%, 150%",
   "native_window_logical_sizes": [
     "740x600",
     "540x480"
@@ -32,11 +32,7 @@
       "skipped": 20
     }
   },
-  "other_actual_os_scales": {
-    "100%": "NOT RUN",
-    "150%": "NOT RUN"
-  },
-  "settings_changed": false,
+  "settings_changed": true,
   "original_data_and_jar_bytes": "unchanged after native runs",
   "screenshots": {
     "disabled-popup.png": "11ffaf28484f0a47e7a41d76bcd68ea8c7a0cce31499e338a071c1527bd50a2f",
@@ -44,7 +40,46 @@
     "long-contact-end.png": "decfc8d5bb98fe83e4bbb16dac018c7fd8437156a2f0ba541ff8768c5bdcebc5",
     "former-history-end.png": "d6f596572b5b2ddbd8ee3cd5e05b672d8da00e288107b3fb0b5cff57cc49b407",
     "help-draft-end.png": "0b5c945d87ffd77e9147d666f9c909fcfd81bf686cb5a7291ba9574a71dd236c",
-    "protected-warning-pressed.png": "bf1b90f858eb3896c88aeed4cc66b982463e33889d9a17b97e3eaecbfff615e7"
+    "protected-warning-pressed.png": "bf1b90f858eb3896c88aeed4cc66b982463e33889d9a17b97e3eaecbfff615e7",
+    "scale-100/disabled-popup.png": "917c69b385df43bdd73a2df24f325f63e3fc326b68588e0cc6e8f0aad901c3f2",
+    "scale-100/active-popup-selection.png": "3cd4c91b77f25f8adeedb3731cbc9800c4e608073bf27ef1c61ef5d6107d82db",
+    "scale-100/long-contact-end.png": "967b3878ec0c11287866a616e68c6732dfd373671cc0ea8c30df24a0926c797a",
+    "scale-100/former-history-end.png": "659ca0e3db9177d5c4a1189c0bc0bdfdaa46367dd89aae29d1e46215376b83bb",
+    "scale-100/help-draft-end.png": "3b4481e4e1cbe95ce8283f46847c04333fe8babfe9baf53c757f1db707306c8b",
+    "scale-100/protected-warning-pressed.png": "b825c5377bd33e7b7f1ff942211efec9d35cd51309e29bd18e84f2beb5bce7cd",
+    "scale-150/disabled-popup.png": "80df43c33f02c56a61d236afbcf7f958d306fa0d7d268c214599010ff4f79215",
+    "scale-150/active-popup-selection.png": "4bba629196f4f1dc0bb18ca6895ff37f554779a6261f7930234efbb95a2076a9",
+    "scale-150/long-contact-end.png": "a7e1d07c00588aad7b89d3ccf2b976e746e796f21e9b1685b49a0e0b3bf416d3",
+    "scale-150/former-history-end.png": "f15c26c324baaa95fd5109baf0a83d16192c414679ddbd08d9ccfccc5d42189a",
+    "scale-150/help-draft-end.png": "b438d5074acf18b4128cdd5eea60ae32cc39648ad1d723523f421c2b722d3ae1",
+    "scale-150/protected-warning-pressed.png": "0b5cb05a268a2559a57456f0198c25b185b9963c88c64d1b6df99da121a5ce65"
   },
-  "assistance": "Ernest with OpenAI Codex; opt-in JavaFX Robot acceptance instrumentation"
+  "assistance": "Ernest with OpenAI Codex; opt-in JavaFX Robot acceptance instrumentation",
+  "native_matrix": {
+    "100": {
+      "current": "PASS",
+      "former": "PASS",
+      "protected": "PASS"
+    },
+    "125": {
+      "current": "PASS",
+      "former": "PASS",
+      "protected": "PASS"
+    },
+    "150": {
+      "current": "PASS",
+      "former": "PASS",
+      "protected": "PASS"
+    }
+  },
+  "required_actual_os_scales": {
+    "100%": "PASS",
+    "125%": "PASS",
+    "150%": "PASS"
+  },
+  "settings_restored": {
+    "physical_display": "2560x1440",
+    "actual_os_scale": "125%",
+    "verification": "Windows Display Settings inspected; fresh independent JVM probe"
+  }
 }

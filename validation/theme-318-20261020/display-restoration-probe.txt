@@ -1,0 +1,8 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.glass.utils.NativeLibLoader in module javafx.graphics (jrt:/javafx.graphics)
+WARNING: Use --enable-native-access=javafx.graphics to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+READY: JavaFX Robot; no input sent
+DISPLAY 2560x1440 scale=1.25 logical=Rectangle2D [minX=0.0, minY=0.0, maxX=2048.0, maxY=1152.0, width=2048.0, height=1152.0]
+OK info

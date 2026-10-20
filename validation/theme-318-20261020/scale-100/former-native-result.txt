@@ -1,0 +1,35 @@
+Start 2026-10-20T01:17:49.812743200Z; profile=former
+Java 25.0.4.1+1-LTS; OS Windows 11 10.0
+Native screen bounds=Rectangle2D [minX=0.0, minY=0.0, maxX=2560.0, maxY=1440.0, width=2560.0, height=1440.0]; work area=Rectangle2D [minX=0.0, minY=0.0, maxX=2560.0, maxY=1440.0, width=2560.0, height=1440.0]; output scale=1.0x1.0
+Stage=740.0x600.0; output scale=1.0x1.0
+AWT physical mode=2560x1440; transform=AffineTransform[[1.0, 0.0, 0.0], [0.0, 1.0, 0.0]]
+Display settings are observed only. No forced JavaFX scale or OS setting changes.
+02-file-popup: Exit; disabled=false; text=0x000000ff; opacity=1.0
+02-file-popup: native hover Exit; text=0x000000ff
+02-help-popup: Help; disabled=false; text=0x000000ff; opacity=1.0
+02-help-popup: native hover Help; text=0x000000ff
+03-empty-input-context: Undo; disabled=true; text=0xb8b8b8ff; opacity=1.0
+03-empty-input-context: Redo; disabled=true; text=0xb8b8b8ff; opacity=1.0
+03-empty-input-context: Cut; disabled=true; text=0xb8b8b8ff; opacity=1.0
+03-empty-input-context: Copy; disabled=true; text=0xb8b8b8ff; opacity=1.0
+03-empty-input-context: Paste; disabled=false; text=0xf2f2f2ff; opacity=1.0
+03-empty-input-context: Delete; disabled=true; text=0xb8b8b8ff; opacity=1.0
+03-empty-input-context: Select All; disabled=false; text=0xf2f2f2ff; opacity=1.0
+03-empty-input-context: native hover Paste; text=0x000000ff
+05-selected-input-context: Undo; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: Redo; disabled=true; text=0xb8b8b8ff; opacity=1.0
+05-selected-input-context: Cut; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: Copy; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: Paste; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: Delete; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: Select All; disabled=false; text=0xf2f2f2ff; opacity=1.0
+05-selected-input-context: native hover Undo; text=0x000000ff
+Native resize observed: 740.0x600.0 -> 540.0x480.0
+08-long-contact-scroll: scrollbar VERTICAL value=1.0 min=0.0 max=1.0
+11-lesson-detail-scroll: scrollbar VERTICAL value=1.0 min=0.0 max=1.0
+14-history-last: scrollbar VERTICAL value=1.0 min=0.0 max=1.0
+PASS: native command error/recovery, list selection, contact/history scrolling, attendance views,
+F1/menu draft preservation, help end reachability and result divider interaction.
+N/A: this pre-shell production window has no Button/Run control; no synthetic control added.
+Actual OS configurations not present above remain NOT RUN; this is not full matrix certification.
+Native interaction run: PASS
