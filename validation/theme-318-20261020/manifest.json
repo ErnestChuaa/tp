@@ -1,0 +1,50 @@
+{
+  "tested_code_commit": "05b2d8edb0b4a6f284de087df135dc6854eb0da5",
+  "team_master": "42debf09",
+  "palette_pr_338": "4bdb0e18d01a1e05211e6dd5d0f06b126a8c894d",
+  "wordmark_pr_339": "6cda3bdeb20e08ce000ab557de470b743e60c053",
+  "runtime": "Windows 11 x64; Azul Java/JavaFX 25.0.4.1+1-LTS",
+  "physical_display": "2560x1440",
+  "actual_os_scale": "125%",
+  "native_window_logical_sizes": [
+    "740x600",
+    "540x480"
+  ],
+  "native_profiles": {
+    "current": "PASS",
+    "former": "PASS",
+    "protected": "PASS"
+  },
+  "package_sha256": "33987b1e05d1b46dacdc7ca9400b535f99926c067f3f616072018325a0cde3fe",
+  "checks": {
+    "palette": {
+      "suites": 123,
+      "tests": 830,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 20
+    },
+    "combined": {
+      "suites": 125,
+      "tests": 857,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 20
+    }
+  },
+  "other_actual_os_scales": {
+    "100%": "NOT RUN",
+    "150%": "NOT RUN"
+  },
+  "settings_changed": false,
+  "original_data_and_jar_bytes": "unchanged after native runs",
+  "screenshots": {
+    "disabled-popup.png": "11ffaf28484f0a47e7a41d76bcd68ea8c7a0cce31499e338a071c1527bd50a2f",
+    "active-popup-selection.png": "681ad709d3abc6a6f2336c569f792020dbb2273154014946e8e352f34fe027fb",
+    "long-contact-end.png": "decfc8d5bb98fe83e4bbb16dac018c7fd8437156a2f0ba541ff8768c5bdcebc5",
+    "former-history-end.png": "d6f596572b5b2ddbd8ee3cd5e05b672d8da00e288107b3fb0b5cff57cc49b407",
+    "help-draft-end.png": "0b5c945d87ffd77e9147d666f9c909fcfd81bf686cb5a7291ba9574a71dd236c",
+    "protected-warning-pressed.png": "bf1b90f858eb3896c88aeed4cc66b982463e33889d9a17b97e3eaecbfff615e7"
+  },
+  "assistance": "Ernest with OpenAI Codex; opt-in JavaFX Robot acceptance instrumentation"
+}
