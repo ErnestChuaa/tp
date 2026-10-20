@@ -1,0 +1,5 @@
+PASS normal overview and 34 lower/uppercase topics under Turkish locale
+PASS 98 malformed/domain/control/weekday rejections; zero writes; retry remains usable
+PASS optional e/a/Student-phone clear; one write; repeated clear no write; reload matches
+PASS missing/corrupt/legacy/future startup; protected help/list/exit only and parsing precedence
+ALL PACKAGED ROUTER CHECKS PASS; native UI and final-candidate acceptance are separate

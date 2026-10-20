@@ -1,0 +1,10 @@
+Configuration file: /docs/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /docs
+       Destination: /docs/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+       Jekyll Feed: Generating feed for posts
+   GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+                    done in 3.344 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

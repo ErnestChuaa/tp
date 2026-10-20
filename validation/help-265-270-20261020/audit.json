@@ -1,0 +1,16 @@
+{
+  "source": "9d7ae406e1364bd5b39369545053fe6ec3273888",
+  "rendered_pages": 10,
+  "local_targets": 415,
+  "images": 33,
+  "link_table_failures": [],
+  "tests": {
+    "tests": 896,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 20
+  },
+  "suites": 130,
+  "jar_bytes": 12661556,
+  "jar_sha256": "c8d438fc8bc346a1e39562912669e0da4d01ba4743b9cae8aa9dca126ee523bf"
+}
