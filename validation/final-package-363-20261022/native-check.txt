@@ -1,10 +1,13 @@
-Remaining native checks on the frozen final JAR
+Manual reproduction of completed native checks on the frozen final JAR
 Ernest Chua with OpenAI Codex assistance, 22 October 2026
 
 Launch from PowerShell:
   & C:\Users\ernes\tp\_temp\ernest-final-package-363\validation\final-package-363-20261022\Launch-NativeCheck.ps1
 
-This opens a separate copy of the verified JAR and fictitious test records.
+Run-NativeCheck.ps1 has completed these checks using JavaFX Robot; see
+native/result.txt and README.txt for actual PASS results and runtime limits.
+The commands below are optional independent manual reproduction.
+Launch-NativeCheck.ps1 opens a separate copy of the verified JAR and fictitious test records.
 No agent or input automation is attached. It uses the installed Azul Java25+FX.
 Record the OS, screen resolution and actual scaling; do not change settings.
 
@@ -24,4 +27,4 @@ Record the OS, screen resolution and actual scaling; do not change settings.
    draft 'editlesson lid/L1 s/Unfinished' without Enter. Invoke Help > Help and
    F1 from command input and feedback. Draft, filter, selection and history
    must remain. Close normally and report any failure, or PASS with the actual
-   platform/resolution/scale. These gestures remain NOT RUN until observed.
+   platform/resolution/scale. Record any new independent observations separately.

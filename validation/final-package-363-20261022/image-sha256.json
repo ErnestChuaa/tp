@@ -13,5 +13,21 @@
   "menu-File-false.png": "2d4b684ee81444ca1975b0e6c2bad71ce23e01643e8f75d83c981e089850a2b8",
   "menu-File-true.png": "75cc7a16c98037495a60edcc30c28b0a6bb8e2980f662c55b915bf3feaf75275",
   "menu-Help-false.png": "6afadd4bb892bfcb25f532ad7799e8e2e6c3d85944b31e47a10c3de79f7b519e",
-  "menu-Help-true.png": "97fbded44a3ae2fc6ead638b2a3f49334ad58d56dd2516d1308963f3edd8a8a4"
+  "menu-Help-true.png": "97fbded44a3ae2fc6ead638b2a3f49334ad58d56dd2516d1308963f3edd8a8a4",
+  "native/01-native-startup.png": "7fed6e13ce4b2fc274eafab64f736d7260b613eb59bc0e3645bd9b156d5becfe",
+  "native/02-native-maximized.png": "77e680393791d933c864d4a407f1c253196ea3ee2bb7ca3982446cafa113d5c4",
+  "native/03-native-expanded-help.png": "6b4cc613ffb793a3918c6e83d10702bc10cb5e947b55c37552115bf71aac54ab",
+  "native/04-native-minimum-help-end.png": "81f26f5c73282c7d6150b8c4b357da319cd0a970f2bc8fa0433865752b5f4954",
+  "native/05-native-lesson-context.png": "004e769bca5ec424fcf623ff4b6b1e8dd29a355343d5627bfc2bf88d817efcb5",
+  "native/06-native-lesson-summary-zero.png": "a05127cce33befe4fc7ef1b6e6bc01270ecb53270add60df487ded9c982f6ca5",
+  "native/07-native-lesson-context-live.png": "e746456166f66e1b735135db388c0f7713f31ea3b965882ee410ec57d902e83a",
+  "native/08-native-lesson-summary-live.png": "2de1702bad30acf771685b847b36b07741ba102c1c5fecd0bd89b60d222a575a",
+  "native/09-native-history-context.png": "c29135571d99c1245fd8717487f739d6cfbb6e2adf052fed651e8b433265626d",
+  "native/10-native-history-summary-one.png": "d3fe4f38f724a2a353d57c5d741d7168dfe1f48c4709f905281a3ffaef4eb2ae",
+  "native/11-native-history-summary-live.png": "83b6cef1426fb8595fffc32469558a44446ccbfcd36e27bbbc59b94aacfa07f2",
+  "native/12-native-file-ordinary.png": "c833eebcf917cc71fcc69246b249235cc319b47fcd9ca080f52991ee390adbf7",
+  "native/13-native-file-keyboard-highlight.png": "a8a455b6f532d31af2445152221517580a4edfb8264a09101ae581a6c34380e2",
+  "native/14-native-help-ordinary.png": "df40794b36b3919eb665f94d3dfc8f108760437798c21d7ead17ea44ca3e5c63",
+  "native/15-native-help-keyboard-highlight.png": "0e873cbf3a83bfc15997fabdbff87e3465ac6594f243eb3092bd0d53d5865bda",
+  "native/16-native-help-draft-history.png": "9ac63240e064ed3ec6daa6505b0fec6f0b164191be383e304e9641b5a4a2ef2a"
 }

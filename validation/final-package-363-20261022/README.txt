@@ -3,12 +3,13 @@ Ernest Chua (ErnestChuaa), with OpenAI Codex assistance
 
 Status
 ------
-Automated affected checks PASS on the exact downloaded final JAR. Native
-gestures remain NOT RUN because this session exposes browser controls only;
-the computer-use tool explicitly disables native application APIs. A separate
-manual fixture, local launcher and bounded checklist are ready. Do not close
-#363 or describe final affected acceptance as complete until that remaining
-observation is recorded. No observed product defect blocks the automated run.
+Automated and native affected checks PASS on the exact downloaded final JAR.
+The user explicitly requested PowerShell/script-based native testing after the
+initial computer-use surface exposed browser controls only. Run-NativeCheck.ps1
+compiles a separate diagnostic agent and drives the actual application with
+JavaFX Robot. The completed native/result.txt and real screen captures supersede
+the earlier native NOT RUN status in the initial automated-run transcripts.
+Ernest's bounded #363/#369 final-package handoff is ready for #274 publication.
 
 Identity
 --------
@@ -105,20 +106,49 @@ merged as 8ce4440ead2374e65ec5477df28fe20a55477913. Its head Java CI run
 39769661417 passed. This evidence does not claim that review or merge as
 Ernest's action; it supplies supplementary rendered/source checks.
 
-Remaining bounded native check and release handoff
---------------------------------------------------
-native-check.txt and Launch-NativeCheck.ps1 identify the separate local
-manual-jar fixture containing these exact bytes and fictitious records.
-Record actual native divider expansion/shrinking, popup keyboard/F1, four
-pointer-hover activations, preserved draft/filter/selection/history, runtime,
-screen resolution and scale. The user has been asked for these observations.
-Other OS/scales and an independent human sign-off are NOT RUN in this record.
-Earlier accepted native/platform evidence stays attached to its older JAR;
-it is not transferred to the final package by these automated checks.
+Completed native check and release handoff
+------------------------------------------
+Run-NativeCheck.ps1 launched the exact verified JAR in another fresh writable
+folder with Azul 25.0.4.1+1-LTS / JavaFX 25.0.4+100, Windows 11 amd64.
+Observed 2048x1152 logical screen at outputScale 1.25. Actual native screen
+captures include window decorations and live tooltips/popups, without editing.
+No screen scaling or system setting was changed.
+
+PASS: fresh and maximized startup feedback 80 logical px; real mouse divider
+drag expands to 555.2 and shrinks to 80; list/help keep the chosen split. Real
+Ctrl-End reaches the complete help-search end at maximized compact feedback
+and the minimum 436x322.4 scene. Navigation, both scrollable result viewports,
+command input and footer remain reachable; the long footer path truncates.
+
+PASS: actual pointer hover opens all four current tooltips at the minimum
+window. A long query remains complete after help replaces its feedback;
+lessons changes the context and count to All lessons / 1. History identifies
+Student S1 / L1 and the displayed count updates from 1 to 2 after a committed
+second-date mark, remaining available after help. Native screenshots inspected
+for full wrapping text and preserved result-list space.
+
+PASS: real File/Help clicks show readable ordinary popup labels. Real Down
+highlights the item, Right changes File to Help, Escape dismisses it and Enter
+invokes Help. Native F1 from command input and feedback each replaces search
+guidance with the overview, preserving the unfinished draft, people filter,
+order, selected Alex, active history/context and operational bytes. Both
+ordinary/highlighted popup screenshots and final draft/history were inspected.
+
+These are automated native Windows acceptance results, not an independent
+human sign-off. Other OS/scales remain NOT RUN for these new bytes. Older
+native/platform evidence stays under its original identity. The first native
+pass succeeded; a second fresh run adds explicit hover-after-help coverage and
+also passes. No product change or new JAR is needed.
+
+native-check.txt / Launch-NativeCheck.ps1 remain available for optional manual
+reproduction. Run-NativeCheck.ps1 is the executed automated native script;
+NativePackageAgent.java extends the initial diagnostic helper without altering
+application classes. The native report carries its own timing and measurements.
 
 #363 remains Ernest / v1.4 / due 22 October 2026 15:30 SGT, overdue unchanged.
-#369's implementation remains integrated/closed; these results reconcile its
-headings with the combined package without reopening it. #274 publication and
+#363's acceptance/handoff is now complete; record the actual overdue completion
+without changing its due date. #369 remains integrated/closed; these results
+reconcile its headings with the combined package without reopening it. #274 publication and
 public-download size/hash/manifest/launch/link verification remain Zhi Yu's
 work after affected acceptance. Vincent retains #275 closeout. #362 remains
 cancelled. No full human testing round or later v1.5 task is added.
