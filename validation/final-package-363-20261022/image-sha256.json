@@ -1,0 +1,17 @@
+{
+  "01-fresh-startup.png": "ae0c262ac427bf2de2f025bd30ca69a67b475a41c8f5dc2c42c3e4ddfac8fc89",
+  "02-maximized.png": "125648f32af618f51180f6aa766b4b651526bd0b0f28c4314a3bd888878bb34b",
+  "03-expanded-search-help.png": "769331867114c1728abbf3eb102ffd49b80839d779de7ec7c2245c50752fb41f",
+  "04-long-lesson-context.png": "b3518eeb33315f20fa2d7be74fe97d91adcbe8536fe427b0371109f6308ee8ba",
+  "05-lesson-summary-zero.png": "c1af36e8fb8728cc924921efeb14dd38f98ed25eee2f4256a8104e83d0d66388",
+  "06-lessons-context-live.png": "1dd59a5103907cd9a117fd4c33a34afc4760d74f3a859980421c30c78557695d",
+  "07-lesson-summary-live.png": "4f6357098b27f5c851d1aef98e4687a282e001fcbb0e219f3dbf6b03c22a3762",
+  "08-history-context.png": "b90729cc0a021e626f20504b9a85f547624ca8d41a428dab8a9afce4dbe56cb8",
+  "09-history-summary-one.png": "abbceebd5d7b7c8b0c561ea60bb45c67f162264a3a608ab49dd5ab7e35ca44c2",
+  "10-history-summary-live.png": "f483af334ec5db1b3b849e9a191ad0ed4482783fcb730cbc9591d220aa17820f",
+  "13-compact-help-draft-history.png": "c13519842c4c49ac78d24a55e5ff1521738db9bbdf0137cc96df60f9cdf43f03",
+  "menu-File-false.png": "2d4b684ee81444ca1975b0e6c2bad71ce23e01643e8f75d83c981e089850a2b8",
+  "menu-File-true.png": "75cc7a16c98037495a60edcc30c28b0a6bb8e2980f662c55b915bf3feaf75275",
+  "menu-Help-false.png": "6afadd4bb892bfcb25f532ad7799e8e2e6c3d85944b31e47a10c3de79f7b519e",
+  "menu-Help-true.png": "97fbded44a3ae2fc6ead638b2a3f49334ad58d56dd2516d1308963f3edd8a8a4"
+}

@@ -1,0 +1,27 @@
+Remaining native checks on the frozen final JAR
+Ernest Chua with OpenAI Codex assistance, 22 October 2026
+
+Launch from PowerShell:
+  & C:\Users\ernes\tp\_temp\ernest-final-package-363\validation\final-package-363-20261022\Launch-NativeCheck.ps1
+
+This opens a separate copy of the verified JAR and fictitious test records.
+No agent or input automation is attached. It uses the installed Azul Java25+FX.
+Record the OS, screen resolution and actual scaling; do not change settings.
+
+1. Confirm startup feedback is compact; maximize and confirm it stays compact.
+   Drag the horizontal feedback divider down then up. Enter 'help search',
+   expand/shrink again and scroll to its final 'Examples:' line. Commands must
+   keep your chosen split. Command input, navigation and both lists stay usable.
+2. Enter 'search c/lesson s/Advanced Mathematics Advanced Mathematics Advanced
+   Mathematics Advanced Mathematics Advanced Mathematics'. Hover both the
+   Lesson context and count; complete current text must appear. Enter 'lessons'
+   and confirm both tooltips update. Enter 'search c/student n/Alex', select
+   Alex, then 'history 1 lid/L1'. Hover both attendance context/count headings.
+   Enter 'unmark 1 lid/L1 d/2026-10-12' then inspect the updated count tooltip.
+3. Inspect File > Exit and Help > Help ordinary/highlighted popup labels.
+   Use keyboard arrows/Escape/Enter to navigate the menus (do not activate Exit
+   until finished). With Alex filtered/selected and history visible, type the
+   draft 'editlesson lid/L1 s/Unfinished' without Enter. Invoke Help > Help and
+   F1 from command input and feedback. Draft, filter, selection and history
+   must remain. Close normally and report any failure, or PASS with the actual
+   platform/resolution/scale. These gestures remain NOT RUN until observed.

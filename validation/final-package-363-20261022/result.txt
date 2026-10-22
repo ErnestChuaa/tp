@@ -1,0 +1,43 @@
+Time=2026-10-22T11:28:43.920586100Z; Java=25.0.4.1+1-LTS; vendor=Azul Systems, Inc.; OS=Windows 11; arch=amd64
+Screen=Rectangle2D [minX=0.0, minY=0.0, maxX=2048.0, maxY=1152.0, width=2048.0, height=1152.0]; workArea=Rectangle2D [minX=0.0, minY=0.0, maxX=2048.0, maxY=1152.0, width=2048.0, height=1152.0]; outputScale=1.25
+JavaFX=25.0.4+100
+fresh-startup: scene=725.5999755859375x562.4000244140625; feedback=80.0; records=360.0
+Command=add r/tutor n/Mei Lim p/92345678; feedback=New tutor added: Mei Lim (T1).
+Command=add r/student n/Alex Tan l/S2 pp/91234567; feedback=New student added: Alex Tan (S1).
+Command=add r/student n/Jamie Tan l/S2 pp/91234567; feedback=New student added: Jamie Tan (S2).
+Command=addlesson d/Mon st/1600 et/1730 s/Math tu/Mei Lim rm/R1; feedback=New lesson added: L1.
+Command=list r/student; feedback=Showing 2 student(s).
+Command=enrol 1 lid/L1; feedback=Student S1 enrolled in lesson L1.
+Command=enrol 2 lid/L1; feedback=Student S2 enrolled in lesson L1.
+Command=mark 1 lid/L1 d/2026-10-05 s/present; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 marked present.
+short-feedback: scene=725.5999755859375x562.4000244140625; feedback=80.0; records=360.0
+maximized: scene=2048.0x1128.800048828125; feedback=80.0; records=926.4
+Command=help search; feedback=1823 characters
+Complete 1823-character search-help end reached; feedback=80.0
+Command=list r/student; feedback=Showing 2 student(s).
+Command=help search; feedback=1823 characters
+Complete 1823-character search-help end reached; feedback=554.4
+divider-shrunk: scene=2048.0x1128.800048828125; feedback=80.0; records=926.4
+Command=search c/lesson s/Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics Advanced Mathematics; feedback=Found 0 lesson(s).
+lessonContext: popup=338.0x116.4000015258789; text=Lesson search: s/advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics advanced mathematics
+lessonSummary: popup=132.7889404296875x46.400001525878906; text=Showing 0 lesson(s).
+Command=lessons; feedback=Showing 1 lesson(s).
+lessonContext: popup=84.98519897460938x46.400001525878906; text=All lessons
+lessonSummary: popup=132.7889404296875x46.400001525878906; text=Showing 1 lesson(s).
+Command=search c/student n/Alex; feedback=Found 1 student(s).
+Command=history 1 lid/L1; feedback=Showing 1 attendance record(s).
+historyContext: popup=206.29931640625x46.400001525878906; text=Student S1 · attendance history · L1
+historySummary: popup=191.475830078125x46.400001525878906; text=Showing 1 attendance record(s).
+Command=mark 1 lid/L1 d/2026-10-12 s/absent; feedback=Attendance for Student S1 in lesson L1 on 2026-10-12 marked absent.
+historySummary: popup=191.475830078125x46.400001525878906; text=Showing 2 attendance record(s).
+Menu=File; focused=false; contrast=15.222998598144818
+Menu=File; focused=true; contrast=9.80849351235419
+Menu=Help; focused=false; contrast=15.222998598144818
+Menu=Help; focused=true; contrast=9.80849351235419
+minimum-window: scene=436.0x322.3999938964844; feedback=80.0; records=120.8
+Command=help search; feedback=1823 characters
+Complete 1823-character search-help end reached; feedback=80.0
+PASS: F1 synthetic events from input/feedback and Help handler preserve draft/filter/selection/history/context/data bytes
+NOT RUN: native divider drag, OS-keyboard popup navigation/F1, pointer-hover activation, other OS/scale configurations
+Scene/tooltip/popup snapshots are rendered controls, not native desktop screenshots or human acceptance
+Exact-JAR automated affected checks=PASS

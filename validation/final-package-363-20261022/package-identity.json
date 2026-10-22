@@ -1,0 +1,8 @@
+{
+  "file": "ponhub.jar",
+  "bytes": 12655415,
+  "sha256": "8fbd0e5414d91c006984489b71083445da41d22f76f37c2fbc49a681d79ac9d6",
+  "manifest": "Manifest-Version: 1.0\r\nImplementation-Title: PonHub\r\nImplementation-Version: 1.4\r\nMain-Class: ponhub.Main\r\n\r\n",
+  "source": "c92c689ee8802fb2cb3957832c25dd9407099dbf",
+  "download": "https://raw.githubusercontent.com/gugrusaurus/tp/5abc52528bdfd608f001b2f0aa26fc60436123a7/validation/final-candidate-20261022/ponhub.jar"
+}

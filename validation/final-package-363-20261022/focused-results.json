@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ponhub.ui.CanonicalMainWindowTest",
+    "tests": "20",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "ponhub.ui.MainWindowResultResizeTest",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "ponhub.ui.ResultHeadingTooltipTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "ponhub.ui.ThemeMenuContrastTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  }
+]
