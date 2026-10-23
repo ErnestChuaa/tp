@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/AY2627S1-CS2103T-F13-3/tp/releases/download/v1.4/ponhub.jar",
+  "source": "c92c689ee8802fb2cb3957832c25dd9407099dbf",
+  "bytes": 12655415,
+  "sha256": "8fbd0e5414d91c006984489b71083445da41d22f76f37c2fbc49a681d79ac9d6",
+  "manifest": "Manifest-Version: 1.0\r\nImplementation-Title: PonHub\r\nImplementation-Version: 1.4\r\nMain-Class: ponhub.Main\r\n\r\n"
+}

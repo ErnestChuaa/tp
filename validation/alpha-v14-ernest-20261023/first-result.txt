@@ -1,0 +1,32 @@
+Released v1.4 alpha: runtime=25.0.4+7-LTS-189; OS=Windows 11
+Screen=Rectangle2D [minX = 0.0, minY=0.0, maxX=2048.0, maxY=1152.0, width=2048.0, height=1152.0]; scale=1.25
+Command=add r/tutor n/Mei Lim p/92345678; success=true; feedback=New tutor added: Mei Lim (T1).
+Command=add r/student n/Alex Tan l/P1 pp/91234567; success=true; feedback=New student added: Alex Tan (S1).
+Command=add r/student n/Jamie Tan l/S2 pp/91234567; success=true; feedback=New student added: Jamie Tan (S2).
+Command=addlesson d/Mon st/1600 et/1700 s/Math tu/Mei Lim rm/R1; success=true; feedback=New lesson added: L1.
+Command=list r/student; success=true; feedback=Showing 2 student(s).
+People horizontal scrollbars=[visible=true; max=1.0]
+Command=enrol 1 lid/L1; success=true; feedback=Student S1 enrolled in lesson L1.
+Command=enrol 2 lid/L1; success=true; feedback=Student S2 enrolled in lesson L1.
+Command=mark 1 lid/L1 d/2026-10-05 s/present; success=true; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 marked present.
+Command=mark 2 lid/L1 d/2026-10-05 s/absent; success=true; feedback=Attendance for Student S2 in lesson L1 on 2026-10-05 marked absent.
+Command=mark 1 lid/L1 d/2026-10-05 s/absent; success=true; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 marked absent.
+Command=mark 1 lid/L1 d/2026-10-05 s/absent; success=true; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 is already marked absent. No changes made.
+Command=mark 1 lid/L1 d/2026-10-06 s/present; success=false; feedback=Attendance date 2026-10-06 does not match lesson L1's Mon schedule.
+Command=mark 1 lid/L1 d/2026-02-30 s/present; success=false; feedback=Attendance dates must be real calendar dates in YYYY-MM-DD format.
+Command=mark 0 lid/L1 d/2026-10-05 s/present; success=false; feedback=Index must be a positive integer.
+Command=mark 1 lid/L999 d/2026-10-05 s/present; success=false; feedback=The lesson does not exist: L999
+Command=unenrol 1 lid/L1; success=true; feedback=Student S1 unenrolled from lesson L1.
+Command=history 1 lid/L1; success=true; feedback=Showing 1 attendance record(s).
+Command=mark 1 lid/L1 d/2026-10-12 s/present; success=false; feedback=Student S1 must be enrolled in lesson L1 before new attendance can be recorded.
+Command=mark 1 lid/L1 d/2026-10-05 s/present; success=true; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 marked present.
+Command=showlesson lid/L1 d/2026-10-05; success=true; feedback=Showing lesson L1 for 2026-10-05.
+Command=unmark 1 lid/L1 d/2026-10-05; success=true; feedback=Attendance for Student S1 in lesson L1 on 2026-10-05 removed.
+Command=unmark 1 lid/L1 d/2026-10-05; success=true; feedback=No attendance record exists for Student S1 in lesson L1 on 2026-10-05. No changes made.
+Command=deletelesson lid/L1; success=false; feedback=Lesson L1 cannot be deleted while its roster contains these Student IDs: S2. Unenrol all Students first.
+Command=add r/parent n/Pat Tan p/91234567; success=false; feedback=Could not save data due to the following error: Save destination is not a regular file: C:\Users\ernes\tp\_temp\round1-20261023\alpha-text-only\app\data\ponhub.json
+Command=add r/parent n/Pat Tan p/91234567; success=true; feedback=New parent added: Pat Tan (P1).
+Attendance independent keys/corrections/no-op/invalid-date/selector/former-member/unmark and failed-save/retry=PASS
+Commands exercise the real packaged CommandBox/ActionEvent/session/storage; text-only evidence.
+This does not certify all features/platforms or count as independent testing of Ernest's history UI.
+Released-JAR alpha checks=PASS
